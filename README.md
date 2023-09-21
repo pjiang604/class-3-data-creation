@@ -12,3 +12,15 @@ npx expo install react-native-screens react-native-safe-area-context
 
 [Stack Navigator](https://reactnavigation.org/docs/native-stack-navigator/)
 npm install @react-navigation/native-stack
+
+# Class 3
+
+## Installations
+[React Native Paper Expo UI](https://callstack.github.io/react-native-paper/docs/guides/getting-started)
+npm install react-native-paper
+
+### React Native Paper
+
+#### Components
+* [Avatar.Icon](https://callstack.github.io/react-native-paper/docs/components/Avatar/AvatarIcon)
+* [Button](https://callstack.github.io/react-native-paper/docs/components/Button/)
