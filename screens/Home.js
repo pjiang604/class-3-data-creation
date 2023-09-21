@@ -28,7 +28,7 @@ export default function Home({ navigation }) {
 
     const ButtonComp = () => (
         <Button icon="camera" mode="contained-tonal" onPress={() => {console.log('Pressed'); alert("Hello Monika")}}>
-            Press me
+            Click to say "Hello!"
         </Button>
     );
 
@@ -36,7 +36,7 @@ export default function Home({ navigation }) {
         <View style={styles.container}>
             <TouchableOpacity onPress={() => check()}
                 style={number === 1 ? styles.btnBlue :
-                    number === 2 ? styles.btnRed : styles.btnGreen}>
+                    number === 2 ? styles.btnPink : styles.btnOrange}>
                 <Text>Click Me!</Text>
             </TouchableOpacity>
             <AvatarComp />
@@ -48,7 +48,7 @@ export default function Home({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#b0d1f5',
         alignItems: 'center',
         justifyContent: 'space-between',
         padding: 50,
@@ -61,18 +61,18 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         padding: 10
     },
-    btnRed: {
+    btnPink: {
         alignItems: 'center',
-        backgroundColor: '#800000',
-        borderColor: '#800000',
+        backgroundColor: 'pink',
+        borderColor: 'pink',
         borderRadius: 10,
         borderWidth: 1,
         padding: 10
     },
-    btnGreen: {
+    btnOrange: {
         alignItems: 'center',
-        backgroundColor: '#00563B',
-        borderColor: '#00563B',
+        backgroundColor: '#ECAB65',
+        borderColor: '#ECAB65',
         borderRadius: 10,
         borderWidth: 1,
         padding: 10

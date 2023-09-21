@@ -14,19 +14,19 @@ export default function About({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <Text>Welcome to the dashboard</Text>
+            <Text style={styles.headerText}>Welcome to the dashboard</Text>
             <Button title="Show data" onPress={() => addingData()} />
             {
                 data && data.books.map((b, index) => {
                     if (b.category.toLowerCase() == 'java') {
                         return (
                             <View key={index}>
-                                <Text>{b.title}</Text>
+                                <Text style={styles.titleText}>{b.title}</Text>
                                 {
                                     b.authors && b.authors.map((a, ind) => {
                                         return (
                                             <View key={ind}>
-                                                <Text>{a}</Text>
+                                                <Text style={styles.authorText}>{a}</Text>
                                             </View>
                                         )
                                     })
@@ -44,8 +44,22 @@ export default function About({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#63C5DA',
         alignItems: 'center',
         justifyContent: 'center',
+        gap: 25
+        
     },
+    titleText: {
+        fontSize: 20
+    },
+    authorText: {
+        fontSize: 14,
+        fontStyle: 'italic'
+    },
+    headerText: {
+        fontSize: 30,
+        fontWeight: 'bold'
+    }
+
 });
